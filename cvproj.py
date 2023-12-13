@@ -105,7 +105,7 @@ def preprocess_image(input_image, target_width, target_height, options):
         st.write(r.json())
         pic=""
         for i in range(0,len(dic)):
-            pic+=dic[i]['text']
+            pic+=dic[i]['text']+" "
         pic= pic + " book"
 
         base_url = "https://www.amazon.in"
