@@ -105,7 +105,7 @@ def preprocess_image(input_image, target_width, target_height, options):
         st.write(r.json())
         pic=""
         for i in range(0,len(dic)):
-            if("-"):
+            if(dic[i]['text']=="-" or dic[i]['text']=="@"):
                 pass
             else:
                 pic+=dic[i]['text']+" "
