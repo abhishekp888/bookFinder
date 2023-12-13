@@ -102,6 +102,7 @@ def preprocess_image(input_image, target_width, target_height, options):
         headers = {'X-Api-Key': api_key}
         r = requests.post(api_url,headers=headers, files=files)
         dic= r.json()
+        st.write(r.json())
         pic=""
         for i in range(0,len(dic)):
             pic+=dic[i]['text']
