@@ -110,7 +110,8 @@ def preprocess_image(input_image, target_width, target_height, options):
             else:
                 pic+=dic[i]['text']+" "
         pic= pic + " book"
-
+        if(pic==" book")
+            st.write("No book detected but you can browse books from these websites")
         base_url = "https://www.amazon.in"
         search_url = f"{base_url}/s?k={pic.replace(' ', '+')}"
 
