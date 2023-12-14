@@ -107,7 +107,7 @@ def preprocess_image(input_image, target_width, target_height, options):
         for i in range(0,len(dic)):
             if(dic[i]['text']=="-" or dic[i]['text']=="@"):
                 pass
-            elif(if '@' in dic[i]['text'] or if len(dic[i]['text'])==1):
+            elif('@' in dic[i]['text'] or len(dic[i]['text'])==1):
                 pass
             else:
                 pic+=dic[i]['text']+" "
