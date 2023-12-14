@@ -114,21 +114,19 @@ def preprocess_image(input_image, target_width, target_height, options):
         pic= pic + " book"
         st.write(pic)
         pic = st.text_input("If there is any error in Identification please correct it ", pic)
-        def checkBook(pic):
-            if(pic==" book"):
-                st.write("No book detected but you can browse books from these websites")
-                base_url = "https://www.amazon.in"
-                search_url = f"{base_url}/s?k={pic.replace(' ', '+')}"
-        
-                bases_url="https://www.flipkart.com"
-                searches_url=f"{bases_url}/search?q={pic.replace(' ', '%20')}"
-        
-                basic_url="https://www.goodreads.com"
-                searching_url=f"{basic_url}/search?utf8=%E2%9C%93&query={pic.replace(' ', '+')}"
-                st.write(search_url)
-                st.write(searches_url)
-                st.write(searching_url)
-        checkBook(pic)
+        if(pic==" book"):
+            st.write("No book detected but you can browse books from these websites")
+            base_url = "https://www.amazon.in"
+            search_url = f"{base_url}/s?k={pic.replace(' ', '+')}"
+    
+            bases_url="https://www.flipkart.com"
+            searches_url=f"{bases_url}/search?q={pic.replace(' ', '%20')}"
+    
+            basic_url="https://www.goodreads.com"
+            searching_url=f"{basic_url}/search?utf8=%E2%9C%93&query={pic.replace(' ', '+')}"
+            st.write(search_url)
+            st.write(searches_url)
+            st.write(searching_url)
     return input_image
 
 st.title("Bookfinder")
