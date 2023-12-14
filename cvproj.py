@@ -113,7 +113,7 @@ def preprocess_image(input_image, target_width, target_height, options):
                 pic+=dic[i]['text']+" "
         pic= pic + " book"
         st.write(pic)
-        user_input = st.text_input("If there is any error in Identification please correct it ", pic)
+        pic = st.text_input("If there is any error in Identification please correct it ", pic)
         def checkBook(pic):
         if(pic==" book"):
             st.write("No book detected but you can browse books from these websites")
@@ -128,7 +128,7 @@ def preprocess_image(input_image, target_width, target_height, options):
             st.write(search_url)
             st.write(searches_url)
             st.write(searching_url)
-
+        checkBook(pic)
     return input_image
 
 st.title("Bookfinder")
