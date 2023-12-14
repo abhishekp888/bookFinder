@@ -112,6 +112,7 @@ def preprocess_image(input_image, target_width, target_height, options):
             else:
                 pic+=dic[i]['text']+" "
         pic= pic + " book"
+        st.write("Book Name: ")
         st.write(pic)
         pic = st.text_input("If there is any error in Identification please correct it ", pic)
         if st.button("Search for Books"):
