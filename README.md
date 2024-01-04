@@ -52,4 +52,3 @@ Explore BookFinder by accessing the deployed Streamlit app at [https://bookfinde
 
 Feel free to upload book cover images, customize preprocessing options, and experience the automatic extraction and summarization of essential book information.
 
-For any questions or feedback, please reach out to [Your Name](mailto:your.email@e
