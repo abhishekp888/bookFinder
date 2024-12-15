@@ -1,4 +1,4 @@
 streamlit>=1.18.0
-opencv-python-headless==4.5.5.62  # Use headless version for Streamlit deployments
+opencv-python-headless==4.7.0.64  # Use headless version for Streamlit deployments
 numpy>=1.22.0  # Compatible with Python 3.7+
 requests>=2.26.0
